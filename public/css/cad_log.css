@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap'); /* Fonte menor */
+@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap'); /* Fonte Maior */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"); /* link para conectar o site dos icones */
+
+:root {
+    --dark: #050918;
+    --light: #e5e4fb;
+    --light2: #d0d0d0d0;
+    --tranp: #0000009c;
+    --primary: #2E55D3;
+    --primary2: #1a2f75;
+    --secundary: #35C1FE;
+    --tertiary: #0a1136;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-x:hidden;
+    animation: aparecer 1.3s;
+}
+
+body::-webkit-scrollbar{
+    width: 10px;              
+}
+  
+body::-webkit-scrollbar-track{
+    background: var(--dark);
+}
+ 
+body::-webkit-scrollbar-thumb{
+	background-image: linear-gradient(45deg, var(--secundary) 0%, var(--primary) 100%);
+    border-radius: 30px;
+}
+
+body::-webkit-scrollbar-thumb:hover{
+	background-image: linear-gradient(45deg, var(--secundary) 0%, var(--primary) 100%);
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+
+/* Animation huehue */
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(2.2);
+    }
+}
+
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: .5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes piscar{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

@@ -1,0 +1,76 @@
+#grupoP {
+    width: 100%;
+    max-width: 900px; 
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14vh;
+}
+
+#grupoP h1,h3{
+    font-family: 'Space Mono', monospace;
+    position: relative;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 54px;
+}
+#grupoP h1{
+    font-size: 50px;
+    color: var(--yellow);
+}
+#grupoP h3{
+    font-size: 20px;
+    color: var(--blue);
+}
+
+#grupoP h1:after{
+    content: "";
+    position: absolute;
+    background-color: var(--yellow);
+    box-shadow: 0 5px 20px var(--yellow);
+    height: 3px;
+    width: 100%;
+    left: 0;
+    bottom: -10px;
+    transition: .2s;
+}
+#grupoP h3:after{
+    content: "";
+    position: absolute;
+    background-color: var(--blue);
+    box-shadow: 0 5px 20px var(--blue);
+    height: 3px;
+    width: 100%;
+    left: 0;
+    bottom: -10px;
+    transition: .2s;
+}
+
+.ContMaster {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: 300% 300%;
+} 
+
+@media(max-width: 320px){
+    #grupoP h1{
+        font-size: 20px;
+    }
+    #grupoP h3{
+        font-size: 15px;
+    }
+}
+
+/* #####        Projetos     #### */
+@media(max-width: 700px){
+
+    .ContMaster{   
+        margin: 200px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
