@@ -68,7 +68,7 @@
 @media(max-width: 700px){
 
     .ContMaster{   
-        margin: 200px;
+        margin: 100px;
         display: flex;
         flex-direction: column-reverse;
         align-items: center;

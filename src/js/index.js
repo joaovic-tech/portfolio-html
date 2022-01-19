@@ -3,6 +3,7 @@ function ativaNoScroll(){
     document.querySelectorAll('.imgALL').forEach((img, index) => {
         if(img.getBoundingClientRect().top < (window.innerHeight) / 2){
             img.src = img.getAttribute('data-src');
+            console.log(window.innerHeight * 3 / 4);
         }
     })
 }

@@ -852,6 +852,9 @@ img[src]{
 [data-anime="bottom"] {
     transform: translate3d(0, 50px, 0);
 }
+[data-anime="bottomX"] {
+    transform: translate3d(0, 150px, 0);
+}
 
 [data-anime].animate {
     opacity: 1;

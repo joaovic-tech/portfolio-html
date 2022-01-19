@@ -1,0 +1,24 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "portfolio da lenda",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joaovic2k/portfolio.git"
+  },
+  "author": "joaovic2k",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joaovic2k/portfolio/issues"
+  },
+  "homepage": "https://github.com/joaovic2k/portfolio#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "nodemon": "^2.0.15"
+  }
+}
