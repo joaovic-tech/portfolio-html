@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>João Victor | Portfolio</title>
+    <link rel="stylesheet" href="./css/Geral.css">
+    <link rel="shortcut icon" href="./img/img_eu.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">    
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="logo" href="/">João | Portfolio</a>
+            <div class="mobile_menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul id="nav_ul">
+                <li><a href="#inicio" id="Atual" class="nav_link btn_inicio">Início <i class="fas fa-home"></i></a></li>
+                <li><a href="#sobre" class="nav_link btn_sobre">Sobre <i class="fas fa-address-card"></i></a></li>
+                <li><a href="#habilidades" class="nav_link btn_habilidades">Habilidades <i class="fas fa-angle-double-up"></i></a></li>
+                <li><a href="/Projetos" class='nav_link btn_projetos'>Projetos <i class="fas fa-project-diagram"></i></a> </li>
+                <div id="moon"></div>
+            </ul>
+        </nav>
+    </header>
+    <div id="inicio">
+        <div class="grupo_a" data-anime="left">
+            <div class="DIV_textAlto">
+                <p><span class="L_purple">print</span>("<label class="L_green">OLÁ, SEJA BEM-VINDO(A)!</label>")<br> 
+                    Meu nome é <span class="L_yellow">João</span>, esse aqui é o meu portfolio.</p>
+            </div>  
+            <div class="DIV_textBaixo">
+                <p>Nesse portfolio mostrarei a você meus <a href="./views/projetos.html" class="L_yellow">projetos</a>,<a href="#Objetivos" class="L_blue">objetivos</a> e <a href="#habilidades" class="L_red">habilidades</a>.</p>
+            </div>   
+            <div class="contatoTOP">
+                <h1>Contato:</h1>
+                <div id="iconContato">
+                    <a href="https://github.com/joaovic2k"><i class="fab fa-github icon_contato" id="iconG"></i></a>
+                    <a href="https://www.instagram.com/joaovic2k"><i class="fab fa-instagram icon_contato" id="iconI"></i></a>
+                    <a href="https://t.me/joaovic2k"><i class="fab fa-telegram icon_contato" id="iconT"></i></a>
+                    <a href="https://www.linkedin.com/in/jo%C3%A3o-victor-790116213/"><i class="fab fa-linkedin icon_contato" id="iconL"></i></a>
+                    <a href="https://wa.me/+5548999227431"><i class="fab fa-whatsapp-square icon_contato" id="iconW"></i></a>
+                </div>
+            </div>        
+        </div>
+        <div class="grupo_b" data-anime="right">
+            <div id="div_imgEU">
+                <img src="./img/img_eu.png" id="img_eu" alt="joaovic2k">
+            </div>                
+        </div>
+    </div>  
+    <div id="sobre">
+        <div class="grupo_a">
+            <div class="DIV_textAlto" data-anime="left">
+                <h1>Sobre mim</h1>
+            </div>  
+            <div class="DIV_textBaixo" data-anime="left">
+                <p>Sou formado no curso técnico de informática no ensino médio. Estou estudando 
+                    <label class="L_yellow"> bacharel em engenharia de software da Uniasselvi.</label> 
+                    Em busca de ser um ótimo proficional como <label class="L_red">Engenheiro de software.</label>
+                    <br>
+                    Adquirindo experiência como <span class="L_red">programador python</span>
+                    <br>                    
+                    <span class="L_purple">Linguagens que já utilizei:</span>  
+                    <br>                      
+                    <span style="margin-left:20px;" class="L_orange">HTML</span>
+                    <span style="margin-left:20px;" class="L_blue">CSS</span>
+                    <span style="margin-left:20px;" class="L_yellow">JavaScript</span>
+                    <span style="margin-left:20px;" class="L_light">SQL</span>
+                    <span style="margin-left:20px;" class="L_blue">PHP</span>
+                    <span style="margin-left:20px;" class="L_green">Node.JS</span>
+                    <span style="margin-left:20px;" class="L_red">Python</span>                                                            
+                </p>
+            </div>
+            <br>
+            <div class="DIV_textAlto" data-anime="right">
+                <h1 id="Objetivos">Objetivos</h1>
+            </div>  
+            <div class="DIV_textBaixo" data-anime="right">
+                <p>Já possuo uma grande base com desenvolvimento web e ultimamente estou estudando todos os dias <label class="L_red">Python.</label>
+                Mas aberto para trabalhar e estudar novas linguagens
+                </p>
+            </div>
+        </div> 
+        <div class="grupo_b" data-anime="right">      
+            <div id="Saly-13"></div>                     
+        </div>
+    </div>    
+    <div id="habilidades">                                   
+        <h1 data-anime="bottom">Habilidades</h1>
+        <div id="linguages">
+            <div class="ling">
+                <a href="#HTML" class="DivLink card-html" data-anime="right">
+                    <img loading="lazy" data-src="./img/lig/html5.png" alt="html" class="imgL imgALL">                        
+                </a>
+                <a href="#CSS" class="DivLink card-css" data-anime="left">
+                    <img loading="lazy" data-src="./img/lig/css.png" alt="css" class="imgL imgALL">
+                </a>
+                <a href="#JavaScript" class="DivLink card-js" data-anime="right">
+                    <img loading="lazy" data-src="./img/lig/js.png" alt="js" class="imgL imgALL">
+                </a>
+                <a href="#Git" class="DivLink card-git" data-anime="left">
+                    <img loading="lazy" data-src="./img/lig/git.png" alt="git" class="imgL imgALL">
+                </a>
+            </div>
+            <div class="ling">
+                <a href="#GitHub" class="DivLink card-github" data-anime="right">
+                    <img loading="lazy" data-src="./img/lig/github-169-1174970.webp" alt="github" class="imgL imgALL">
+                </a>
+                <a href="#Python" class="DivLink card-py" data-anime="left">
+                    <img loading="lazy" data-src="./img/lig/python.webp" alt="python" class="imgL imgALL">
+                </a>
+                <a href="#Node-js" class="DivLink card-node" data-anime="right">
+                    <img loading="lazy" data-src="./img/lig/node-js.png" alt="node" class="imgL imgALL">                        
+                </a>
+                <a href="#PHP" class="DivLink card-php" data-anime="left">
+                    <img loading="lazy" data-src="./img/lig/php.png" alt="php" class="imgL imgALL">
+                </a>
+            </div>   
+            <div class="ling">
+                <a href="#mysql" class="DivLink card-mysql" data-anime="right">
+                    <img loading="lazy" data-src="./img/lig/mysql.png" alt="mysql" class="imgL imgALL">
+                </a>
+                <a href="#Java" class="DivLink card-java" data-anime="left">
+                    <img loading="lazy" data-src="./img/lig/java.png" alt="java" class="imgL imgALL">
+                </a>
+                <a href="#Photoshop" class="DivLink card-photoshop" data-anime="right">
+                    <img loading="lazy" data-src="./img/lig/Photoshop.png" alt="Photoshop" class="imgL imgALL">
+                </a>
+            </div>         
+            <div id="SobLig">
+                <div class="DIV_textAlto" data-anime="bottom">
+                    <h1>Oque são esses itens acima?</h1>
+                    <p>Para quem não sabe criei um resumo</p>
+                </div> 
+                <div id="HTML" class="div_SobLig" data-anime="right">                         
+                    <label class="L_orange">HTML</label>
+                    <p>Criada pelo britânico Tim Berners-Lee, o acrônimo HTML significa HiperText Markup Language, 
+                        traduzindo ao português: Linguagem de Marcação de Hipertexto.
+                        HTML é a linguagem para descrever a estrutura das páginas web. HTML dá aos autores os meios para 
+                        publicar documentos on-line com títulos, texto, tabelas, listas, fotos etc.
+
+                    </p>
+                </div>
+                <div id="CSS" class="div_SobLig" data-anime="left">
+                    <label class="L_blue">CSS</label>
+                    <p>O Cascading Style Sheets (Folha de Estilo em Cascata),
+                        foi proposto por Hakon Lie em 1994. È a Linguagem para descrever a apresentação das páginas da web, incluindo cores, 
+                        layout e fontes.Ele permite se adaptar à apresentação de diferentes tipos de dispositivos, 
+                        tais como telas grandes, telas pequenas, ou impressoras. 
+                        CSS é independente do HTML e pode ser usado com qualquer linguagem de marcação baseada em XML.
+                    </p>
+                </div>
+                <div id="JavaScript" class="div_SobLig" data-anime="right">
+                    <label class="L_yellow">JavaScript</label>
+                    <p>Criado por Brendan Eich,em 1995 e a última versão foi em 2018. É uma linguagem de objeto script da Netscape.  
+                        que permite a você implementar itens complexos em páginas web — 
+                        toda vez que uma página da web faz mais do que simplesmente 
+                        mostrar a você informação estática — mostrando conteúdo que se atualiza em um intervalo de tempo, 
+                        mapas interativos ou gráficos 2D/3D animados, etc.
+                    </p>
+                </div>
+                <div id="Git" class="div_SobLig" data-anime="left">
+                    <label class="L_red">Git</label>
+                    <p>Git é um sistema de controle de versão distribuído gratuitamente
+                        e de código aberto projetado para lidar com tudo, desde projetos pequenos
+                        a muito grandes com velocidade e eficiência.
+                        <br>
+                        Referência pega em 01/2022: <a class="L_red" href="https://git-scm.com/">ver referência</a>
+                    </p>
+                </div>
+                <div id="GitHub" class="div_SobLig" data-anime="right">
+                    <label class="L_light">GitHub</label>
+                    <p>GitHub é uma plataforma de hospedagem de código-fonte e arquivos
+                        com controle de versão usando o Git. Ele permite que programadores, 
+                        utilitários ou qualquer usuário cadastrado na plataforma contribuam 
+                        em projetos privados e/ou Open Source de qualquer lugar do mundo.
+                        <br>
+                        <a class="L_light" href="https://github.com/">Entrar no site do GitHub</a>
+                    </p>
+                </div>
+                <div id="Python" class="div_SobLig" data-anime="left">
+                    <label class="L_blue_green">Python</label>
+                    <p>Python é uma linguagem de programação de alto nível, interpretada de script, 
+                        imperativa, orientada a objetos, funcional, de tipagem dinâmica e forte. 
+                        Foi lançada por Guido van Rossum em 1991.
+                    </p>
+                </div>
+                <div id="Node-js" class="div_SobLig" data-anime="right">
+                    <label class="L_green">Node.js</label>
+                    <p>Node.js é um software de código aberto, multiplataforma, 
+                        baseado no interpretador V8 do Google e que permite a execução 
+                        de códigos JavaScript fora de um navegador web.
+                    </p>
+                </div>
+                <div id="PHP" class="div_SobLig" data-anime="left">
+                    <label class="L_blue">PHP</label>
+                    <p>É uma linguagem interpretada livre, usada originalmente apenas para o desenvolvimento 
+                        de aplicações presentes e atuantes no lado do servidor, capazes de gerar conteúdo 
+                        dinâmico na World Wide Web (WWW). A sigla PHP significa Personal Home Page.
+                    </p>
+                </div>
+                <div id="Mysql" class="div_SobLig" data-anime="right">
+                    <label class="L_green">Mysql</label>
+                    <p>É um dos sistema de gerenciamento de banco de dados (SGBD) mais populares do mundo. 
+                        Foi lançado em 23 de maio de 1995 na Suécia por David Axmark, 
+                        Allan Larsson e o finlandês Michael Widenius, e utiliza a linguagem SQL 
+                        (Linguagem de Consulta Estruturada, como interface. 
+                    </p>
+                </div>
+                <div id="Java" class="div_SobLig" data-anime="left">
+                    <label class="L_red">Java</label>
+                    <p>é uma linguagem de programação orientada a objetos desenvolvida na década de 90 
+                        por uma equipe de programadores chefiada por James Gosling.
+                    </p>
+                </div>
+                <div id="Photoshop" class="div_SobLig" data-anime="bottom">
+                    <label class="L_blue">Photoshop</label>
+                    <p>Adobe Photoshop é um software caracterizado como editor de imagens bidimensionais 
+                        do tipo raster desenvolvido pela Adobe Systems. É considerado o líder no mercado 
+                        dos editores de imagem profissionais, assim como o programa de facto para edição 
+                        profissional de imagens digitais e trabalhos de pré-impressão.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <h1 class="h1Es" data-anime="right"><span class="L_light"> Estatísticas tiradas do </span>GitHub <i class="fab fa-github"></i></h1>
+        <div id="gitCard_img" data-anime="bottom">
+            <img class="card_es" src="https://github-readme-stats.vercel.app/api/top-langs/?username=joaovic2k&layout=compact&langs_count=7&theme=radical">
+            <img class="card_es" src="https://github-readme-stats.vercel.app/api?username=joaovic2k&show_icons=true&theme=radical&include_all_commits=true&count_private=true">
+        </div>
+        <br>
+        <h2 class="h2Es" data-anime="right">Commits do meu <a href="https://github.com/joaovic2k" class="L_blue">repositório</a></h2>
+        <div id="Div_snake">
+            <img src="https://raw.githubusercontent.com/joaovic2k/joaovic2k/5d8bfe45e7de98e04c53d68ecddee15f8be41a87/github-contribution-grid-snake.svg" data-anime="bottom">
+        </div>
+    </div>      
+    <div id="eclipse"></div>
+    <script src="js/index.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html>
