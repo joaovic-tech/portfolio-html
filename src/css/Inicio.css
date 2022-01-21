@@ -9,7 +9,7 @@
     --purple: #8338ec;
     --purple_dark: #1a0538;
     --blue: #3a86ff;
-    --green: #32ba2b;
+    --green: #00BB72;
     --yellow: #ffbe0b;
     --orange: #f3722c;
     --red: #ff006e;
@@ -57,7 +57,7 @@ header{
     text-transform: uppercase;
     text-decoration: none;
     color: var(--purple);
-    font-family: 'Space Mono', monospace;
+    font-family: 'Ubuntu', sans-serif;  
     transition: .1s ease-in;
 }
 .logo:hover{
@@ -150,6 +150,17 @@ nav{
     bottom: -10px;
     transition: .2s;
 }
+.btn_contato:after{
+    content: "";
+    position: absolute;
+    background-color: var(--green);
+    box-shadow: 0 5px 20px var(--green);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: .2s;
+}
 
 .btn_inicio:hover,
 .btn_inicio:focus{
@@ -167,6 +178,10 @@ nav{
 .btn_projetos:focus{
     color: var(--yellow);
 }
+.btn_contato:hover,
+.btn_contato:focus{
+    color: var(--green);
+}
 
 .nav_link:hover:after,
 .nav_link:focus:after{
@@ -174,13 +189,14 @@ nav{
 }
 
 #inicio{
-    margin: 50px auto;
+    margin: 100px auto;
     width: 90%;
     max-width: 1100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     text-align: center;
+}
+
+.grupo_iniC{
+    display: flex;
 }
 
 #sobre{
@@ -225,6 +241,19 @@ img[src]{
     margin: 10px;
 }
 
+#inicio_span{
+    font-size: "Oswald", sans-serif;
+    letter-spacing: 0;
+    text-shadow: 0 0 80px var(--light);
+    background: url("../img/img_settings/anima_purple.jpg") repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: aitf 80s linear infinite;
+    -webkit-transform: translate3d(0,0,0);
+    -webkit-backface-visibility: hidden;
+}
+
 .DIV_textAlto p{
     position: relative;
     font-style: normal;
@@ -263,14 +292,15 @@ img[src]{
     font-weight: bold;
     font-size: 30px;
     line-height: 54px;
-    color: var(--red);
+    color: var(--light);
+    text-shadow: 0 0px 20px var(--purple);
 }
 
 .contatoTOP h1:after{
     content: "";
     position: absolute;
-    background-color: var(--red);
-    box-shadow: 0 0 20px var(--red);
+    background-color: var(--light);
+    box-shadow: 0 0px 20px var(--purple);
     height: 3px;
     width: 100%;
     left: 0;
@@ -283,32 +313,37 @@ img[src]{
 }
 
 .icon_contato{
-    font-size: 40px;
+    font-size: 28px;
     margin: 12px;
-    opacity: .7;
-}
-
-.icon_contato:hover,
-.icon_contato:focus{
-    opacity: 1;
-}
-
-#iconG{
     color: var(--light);
+    text-shadow: 0 0px 5px var(--light);
 }
-#iconI{
+
+#iconG:hover,
+#iconG:focus{
+    opacity: .2;
+}
+#iconI:hover,
+#iconI:focus{
     background-image: linear-gradient(180deg, var(--red), var(--purple));
   	-webkit-background-clip: text;
     color: transparent;
+    text-shadow: 0 0px 20px var(--red);
 }
-#iconT{
+#iconT:hover,
+#iconT:focus{
     color: var(--blue);
+    text-shadow: 0 0px 20px var(--blue);
 }
-#iconL{
+#iconL:hover,
+#iconL:focus{
     color: var(--blue);
+    text-shadow: 0 0px 20px var(--blue);
 }
-#iconW{
+#iconW:hover,
+#iconW:focus{
     color: var(--green);
+    text-shadow: 0 0px 20px var(--green);
 }
 
 .L_blue{
@@ -701,7 +736,101 @@ img[src]{
     box-shadow: 0px 0px 12px var(--b2);
 }
 
-/* Menu REsponsive */
+/* ############################-Rodapé-############################ */
+
+#contato{
+    padding: 32px;
+    text-align: center;
+    border-radius: 12px;
+    text-shadow: 0 0 20px var(--purple);
+    border: 4px solid var(--light);
+    border-width: 4px 0;
+    background-image: radial-gradient(var(--dark), var(--tranp));
+}
+
+.rodape_contato{
+    background: var(--dark);
+    border: 4px double var(--purple);
+    border-width: 4px 0;
+    text-shadow: 0 0 100px var(--light);
+    border-radius: 12px;
+    text-align: center;
+    margin: 20px auto;
+    padding: 32px;
+}
+
+.rodape_contato h1{
+    font-size: 24px;
+    color: var(--light);
+    font-family: "Oswald", sans-serif;
+}
+
+.rodape_contato p{
+    font-size: 28px;
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--light);
+}
+
+.MyIcon{
+    width: 180px;
+    height: 180px;
+    margin: 12px;
+    background: var(--purple);    
+    border-radius: 100%;
+    box-shadow: 0 0 12px var(--light);
+    border: 5px solid var(--light);
+    animation: sombraIMG 1s linear infinite;
+}
+
+.anime_paragrafo{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 22px;
+    letter-spacing: .5rem;
+    display: inline-block;
+    border-radius: 12px;
+    border: 4px double var(--purple);
+    color: var(--light);
+    border-width: 4px 0;
+    padding: 1.5em 0em;
+    width: 40em;
+}
+  
+.span_anime{
+    font: 700 4em/1 "Oswald", sans-serif;
+    letter-spacing: 0;
+    padding: .25em 0 .325em;
+    display: block;
+    margin: 0 auto;
+    text-shadow: 0 0 80px var(--light);
+    background: url("../img/img_settings/anima_purple.jpg") repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: aitf 80s linear infinite;
+    -webkit-transform: translate3d(0,0,0);
+    -webkit-backface-visibility: hidden;
+}
+
+@-webkit-keyframes aitf {    
+	0% { 
+        background-position: 0% 50%;
+    }
+	100% { 
+        background-position: 100% 50%; 
+    }
+}
+
+.PtecU{
+    padding: 18px;
+    background-image: linear-gradient(90deg, var(--dark)0%, var(--tranp) 100%);
+    border-radius: 12px;
+    text-shadow: 0 0px 20px var(--purple);
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--light);
+}
+
+/*################################## Menu REsponsive ##################################*/
 @media(max-width: 999px){    
     body{
         overflow-x: hidden;
@@ -793,7 +922,7 @@ img[src]{
     }    
 }
 
-/* Animações */
+/*################################## Animações ##################################*/
 @keyframes navLinkFade{
     from{
         opacity: 0;
@@ -832,6 +961,17 @@ img[src]{
     }
     100%{
         box-shadow: 0 0 50px var(--red);
+    }
+}
+
+
+
+@keyframes corTrocaOY{
+    0%{
+        box-shadow: 0 0 50px var(--orange);
+    }
+    100%{
+        box-shadow: 0 0 50px var(--yellow);
     }
 }
 
