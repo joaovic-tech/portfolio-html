@@ -20,6 +20,7 @@
 *{
     margin: 0;
     padding: 0;
+    outline: none;
 }
 
 html{
@@ -69,7 +70,7 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-family: 'Space Mono', monospace;
+    font-size: "Oswald", sans-serif;
     background: var(--tranp);
     height: 8vh;
 }
@@ -100,7 +101,7 @@ nav{
 .nav_link{
     position: relative;
     text-decoration: none;
-    font-family: 'Space Mono', monospace;
+    font-size: "Oswald", sans-serif;
     font-size: 15px;
     color: var(--light);
     transition: .3s;
@@ -208,9 +209,10 @@ nav{
 }
 
 #habilidades{
+    border-top: 10px double var(--tranp);
     width: 90%;
     max-width: 1100px;
-    margin: 80px;
+    margin: 80px auto;
     text-align: center;
 }
 
@@ -265,7 +267,7 @@ img[src]{
 }
 
 .DIV_textAlto h1{
-    font-family: 'Space Mono', monospace;
+    font-size: "Oswald", sans-serif;
     position: relative;
     font-style: normal;
     font-weight: bold;
@@ -286,7 +288,7 @@ img[src]{
     transition: .2s;
 }
 .contatoTOP h1{
-    font-family: 'Space Mono', monospace;
+    font-size: "Oswald", sans-serif;
     position: relative;
     font-style: normal;
     font-weight: bold;
@@ -347,37 +349,49 @@ img[src]{
 }
 
 .L_blue{
-    font-family: 'Space Mono', monospace;
+    font-size: "Oswald", sans-serif;
     color: var(--blue);
 }
 .L_purple{
-    font-family: 'Space Mono', monospace;
+    font-size: "Oswald", sans-serif;
     color: var(--purple);
 }
 .L_red{
-    font-family: 'Space Mono', monospace;
+    font-size: "Oswald", sans-serif;
     color: var(--red);
 }
 .L_yellow{
-    font-family: 'Space Mono', monospace;
+    font-size: "Oswald", sans-serif;
     color: var(--yellow);
 }
 .L_orange{
-    font-family: 'Space Mono', monospace;
+    font-size: "Oswald", sans-serif;
     color: var(--orange);
 }
 .L_green{
-    font-family: 'Space Mono', monospace;
+    font-size: "Oswald", sans-serif;
     color: var(--green);
 }
 
 .L_light{
-    font-family: 'Space Mono', monospace;
+    font-size: "Oswald", sans-serif;
     color: var(--light);
 }
 .L_blue_green{
-    font-family: 'Space Mono', monospace;
+    font-size: "Oswald", sans-serif;
     background-image: linear-gradient(190deg, var(--blue), var(--yellow));
+  	-webkit-background-clip: text;
+    color: transparent;
+}
+.L_blue_red{
+    font-size: "Oswald", sans-serif;
+    background-image: linear-gradient(190deg, var(--blue), var(--red));
+  	-webkit-background-clip: text;
+    color: transparent;
+}
+.L_blue_orange{
+    font-size: "Oswald", sans-serif;
+    background-image: linear-gradient(190deg, var(--blue), var(--orange));
   	-webkit-background-clip: text;
     color: transparent;
 }
@@ -517,7 +531,7 @@ img[src]{
 }
 
 .h1Es,.h2Es{
-    font-family: 'Space Mono', monospace;
+    font-size: "Oswald", sans-serif;
     font-size: 30px;
     margin: 50px auto;
 }
@@ -546,7 +560,7 @@ img[src]{
 }
 
 #habilidades h1{
-    font-family: 'Space Mono', monospace;
+    font-size: "Oswald", sans-serif;
     font-size: 30px;
     color: var(--light);
     margin: 50px auto;
@@ -567,90 +581,110 @@ img[src]{
 }
 
 .DivLink{
+    text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: column;    
     cursor: pointer;
     margin: 10px;
-    height: 30vh;
-    width: 16vw;
+    width: 150px;
+    height: 150px;
     background: var(--tranp);
     border: 2px solid var(--tranp);
     border-radius: 14px;
-    opacity: .7;
 }
 
-.card-html:hover{
+.icon_link{
+    font-size: 50px;
+}
+
+.label_icon{
+    font-size: 20px;
+}
+.imgL{
+    width: 50%;
+}
+
+.card-html:hover,
+.card-html:focus{
     opacity: 1;
     background: var(--dark);
     border: 2px solid var(--orange);
     box-shadow: 0px 0px 12px var(--orange);
+    text-shadow: 0 0 100px var(--light);
 }
-.card-css:hover{
+.card-css:hover,
+.card-css:focus{
     opacity: 1;
     background: var(--dark);
     border: 2px solid var(--blue);
     box-shadow: 0px 0px 12px var(--blue);
+    text-shadow: 0 0 100px var(--light);
 }
-.card-js:hover{
+.card-js:hover,
+.card-js:focus{
     opacity: 1;
     background: var(--dark);
     border: 2px solid var(--yellow);
     box-shadow: 0px 0px 12px var(--yellow);
+    text-shadow: 0 0 100px var(--light);
 }
-.card-git:hover{
+.card-git:hover,
+.card-git:focus{
     opacity: 1;
     background: var(--dark);
     border: 2px solid var(--red);
     box-shadow: 0px 0px 12px var(--red);
+    text-shadow: 0 0 100px var(--light);
 }
-.card-github:hover{
+.card-github:hover,
+.card-github:focus{
     opacity: 1;
     background: var(--dark);
     border: 2px solid var(--light);
     box-shadow: 0px 0px 12px var(--light);
+    text-shadow: 0 0 100px var(--light);
 }
-.card-py:hover{
+.card-py:hover,
+.card-py:focus{
     opacity: 1;
     background: var(--dark);
     border: 2px solid var(--yellow);
     box-shadow: 0px 0px 12px var(--blue);
+    text-shadow: 0 0 100px var(--light);
 }
-.card-node:hover{
+.card-node:hover,
+.card-node:focus{
     opacity: 1;
     background: var(--dark);
     border: 2px solid var(--green);
     box-shadow: 0px 0px 12px var(--green);
+    text-shadow: 0 0 100px var(--light);
 }
-.card-php:hover{
+.card-php:hover,
+.card-php:focus{
     opacity: 1;
     background: var(--dark);
     border: 2px solid var(--blue);
     box-shadow: 0px 0px 12px var(--blue);
+    text-shadow: 0 0 100px var(--light);
 }
-.card-mysql:hover{
+.card-mysql:hover,
+.card-mysql:focus{
     opacity: 1;
     background: var(--dark);
     border: 2px solid var(--light);
     box-shadow: 0px 0px 12px var(--green);
+    text-shadow: 0 0 100px var(--light);
 }
-.card-java:hover{
+.card-java:hover,
+.card-java:focus{
     opacity: 1;
     background: var(--dark);
     border: 2px solid var(--blue);
     box-shadow: 0px 0px 12px var(--red);
-}
-.card-photoshop:hover{
-    opacity: 1;
-    background: var(--dark);
-    border: 2px solid var(--b2);
-    box-shadow: 0px 0px 12px var(--b2);
-}
-
-.imgL{
-    height: 20vh;
-    padding-top: 4vh;
+    text-shadow: 0 0 100px var(--light);
 }
 
 #SobLig{
@@ -671,7 +705,7 @@ img[src]{
 }
 
 #SobLig p{
-    font-family: 'Space Mono', monospace;
+    font-size: "Oswald", sans-serif;
     font-size: 20px;
     color: var(--light);
 }
@@ -730,11 +764,6 @@ img[src]{
     border: 2px solid var(--blue);
     box-shadow: 0px 0px 12px var(--red);
 }
-#Photoshop{
-    border-radius: 12px;
-    border: 2px solid var(--b2);
-    box-shadow: 0px 0px 12px var(--b2);
-}
 
 /* ############################-Rodapé-############################ */
 
@@ -774,8 +803,7 @@ img[src]{
 .MyIcon{
     width: 180px;
     height: 180px;
-    margin: 12px;
-    background: var(--purple);    
+    margin: 12px; 
     border-radius: 100%;
     box-shadow: 0 0 12px var(--light);
     border: 5px solid var(--light);
@@ -881,11 +909,18 @@ img[src]{
     .logo{
         font-size: 12px;
     }
-    #inicio{    
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-        gap: 0vw;
+    .span_anime{
+        font-size: 30px;
+        letter-spacing: 0;
+        width: 100%;
+        display: block;
+    }
+    .anime_paragrafo{
+        font-size: 30px;
+        width: 100%;
+    }
+    .grupo_iniC{
+        display: block;
     }
     #sobre{    
         display: flex;
@@ -957,9 +992,11 @@ img[src]{
 
 @keyframes sombraIMG{
     0%{
+        background-image: linear-gradient(60deg, var(--purple)0%, var(--tranp) 100%);   
         box-shadow: 0 0 50px var(--purple);
     }
     100%{
+        background-image: linear-gradient(-60deg, var(--red)0%, var(--tranp) 100%);   
         box-shadow: 0 0 50px var(--red);
     }
 }
@@ -994,6 +1031,12 @@ img[src]{
 }
 [data-anime="bottomX"] {
     transform: translate3d(0, 150px, 0);
+}
+[data-anime="bottom_lento"]{    
+    transform: translate3d(0, 800px, 0);
+}
+[data-anime="bottom_rapido"]{    
+    transform: translate3d(0, 300px, 0);
 }
 
 [data-anime].animate {
