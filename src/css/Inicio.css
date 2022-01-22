@@ -70,7 +70,7 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-size: "Oswald", sans-serif;
+    font-family: "Oswald", sans-serif;
     background: var(--tranp);
     height: 8vh;
 }
@@ -101,7 +101,7 @@ nav{
 .nav_link{
     position: relative;
     text-decoration: none;
-    font-size: "Oswald", sans-serif;
+    font-family: "Oswald", sans-serif;
     font-size: 15px;
     color: var(--light);
     transition: .3s;
@@ -196,6 +196,10 @@ nav{
     text-align: center;
 }
 
+.iconNome{
+    display: flex;
+}
+
 .grupo_iniC{
     display: flex;
 }
@@ -244,7 +248,7 @@ img[src]{
 }
 
 #inicio_span{
-    font-size: "Oswald", sans-serif;
+    font-family: "Oswald", sans-serif;
     letter-spacing: 0;
     text-shadow: 0 0 80px var(--light);
     background: url("../img/img_settings/anima_purple.jpg") repeat;
@@ -267,7 +271,7 @@ img[src]{
 }
 
 .DIV_textAlto h1{
-    font-size: "Oswald", sans-serif;
+    font-family: "Oswald", sans-serif;
     position: relative;
     font-style: normal;
     font-weight: bold;
@@ -288,7 +292,7 @@ img[src]{
     transition: .2s;
 }
 .contatoTOP h1{
-    font-size: "Oswald", sans-serif;
+    font-family: "Oswald", sans-serif;
     position: relative;
     font-style: normal;
     font-weight: bold;
@@ -349,48 +353,48 @@ img[src]{
 }
 
 .L_blue{
-    font-size: "Oswald", sans-serif;
+    font-family: "Oswald", sans-serif;
     color: var(--blue);
 }
 .L_purple{
-    font-size: "Oswald", sans-serif;
+    font-family: "Oswald", sans-serif;
     color: var(--purple);
 }
 .L_red{
-    font-size: "Oswald", sans-serif;
+    font-family: "Oswald", sans-serif;
     color: var(--red);
 }
 .L_yellow{
-    font-size: "Oswald", sans-serif;
+    font-family: "Oswald", sans-serif;
     color: var(--yellow);
 }
 .L_orange{
-    font-size: "Oswald", sans-serif;
+    font-family: "Oswald", sans-serif;
     color: var(--orange);
 }
 .L_green{
-    font-size: "Oswald", sans-serif;
+    font-family: "Oswald", sans-serif;
     color: var(--green);
 }
 
 .L_light{
-    font-size: "Oswald", sans-serif;
+    font-family: "Oswald", sans-serif;
     color: var(--light);
 }
 .L_blue_green{
-    font-size: "Oswald", sans-serif;
+    font-family: "Oswald", sans-serif;
     background-image: linear-gradient(190deg, var(--blue), var(--yellow));
   	-webkit-background-clip: text;
     color: transparent;
 }
 .L_blue_red{
-    font-size: "Oswald", sans-serif;
+    font-family: "Oswald", sans-serif;
     background-image: linear-gradient(190deg, var(--blue), var(--red));
   	-webkit-background-clip: text;
     color: transparent;
 }
 .L_blue_orange{
-    font-size: "Oswald", sans-serif;
+    font-family: "Oswald", sans-serif;
     background-image: linear-gradient(190deg, var(--blue), var(--orange));
   	-webkit-background-clip: text;
     color: transparent;
@@ -530,8 +534,21 @@ img[src]{
     background-repeat: no-repeat;
 }
 
+.glitch{
+    font-size: 5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+    margin: auto;
+    text-shadow:
+     0.05em 0 0 rgba(255,0,0,.75),
+     -0.025em -0.05em 0 rgba(0,255,0,.75),
+     0.025em 0.05em 0 rgba(0,0,255,.75);
+     animation: glitch 2000ms infinite;
+}
+
 .h1Es,.h2Es{
-    font-size: "Oswald", sans-serif;
+    font-family: "Oswald", sans-serif;
     font-size: 30px;
     margin: 50px auto;
 }
@@ -560,7 +577,7 @@ img[src]{
 }
 
 #habilidades h1{
-    font-size: "Oswald", sans-serif;
+    font-family: "Oswald", sans-serif;
     font-size: 30px;
     color: var(--light);
     margin: 50px auto;
@@ -705,7 +722,7 @@ img[src]{
 }
 
 #SobLig p{
-    font-size: "Oswald", sans-serif;
+    font-family: "Oswald", sans-serif;
     font-size: 20px;
     color: var(--light);
 }
@@ -822,8 +839,9 @@ img[src]{
     border-width: 4px 0;
     padding: 1.5em 0em;
     width: 40em;
+    animation: bounceInUp 2s;
 }
-  
+
 .span_anime{
     font: 700 4em/1 "Oswald", sans-serif;
     letter-spacing: 0;
@@ -959,6 +977,49 @@ img[src]{
 }
 
 /*################################## Animações ##################################*/
+@keyframes texto_anime{
+    to{
+        transform: translate(0px);
+        opacity: 1;
+    }   
+}
+
+@keyframes digita1{
+    from{
+        width: 0;
+    }
+    to{
+        width: 500px;
+    }
+}
+
+@keyframes cursor1{
+    from{        
+        border-right-color: var(--light);
+    }    
+    to{
+        border-right-color: transparent;
+    }
+}
+
+@keyframes digita{
+    from{
+        width: 0;
+    }
+    to{
+        width: 250px;
+    }
+}
+
+@keyframes cursor{
+    from{        
+        border-right-color: var(--yellow);
+    }    
+    to{
+        border-right-color: transparent;
+    }
+}
+
 @keyframes navLinkFade{
     from{
         opacity: 0;
@@ -1041,4 +1102,31 @@ img[src]{
 [data-anime].animate {
     opacity: 1;
     transform: translate3d(0px, 0px, 0px);
+}
+
+@keyframes glitch{
+    0%{
+        text-shadow:
+         0.05em 0 0 rgba(255,0,0,.75),
+         -0.05em -0.025em 0 rgba(0,255,0,.75),
+         -0.025em 0.05m 0 rgba(0,0,255,.75);
+    }
+    15%{
+        text-shadow:
+         -0.05em -0.025em 0 rgba(255,0,0,.75),
+         0.025em 0.025em 0 rgba(0,255,0,.75),
+         -0.05em -0.05em 0 rgba(0,0,255,.75);
+    }
+    50%{
+        text-shadow:
+         0.025em 0.05em 0 rgba(255,0,0,.75),
+         0.05em 0 0 rgba(0,255,0,.75),
+         0 -0.05em 0 rgba(0,0,255,.75);
+    }
+    100%{
+        text-shadow:
+         -0.025em 0 0 rgba(255,0,0,.75),
+         -0.025em -0.025em 0 rgba(0,255,0,.75),
+         0.025em -0.05em 0 rgba(0,0,255,.75);
+    }
 }

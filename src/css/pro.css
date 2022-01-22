@@ -58,25 +58,6 @@
     background: var(--tranp);
 }
 
-/* #####        Animações        ##### */
-@keyframes digita{
-    from{
-        width: 0;
-    }
-    to{
-        width: 250px;
-    }
-}
-
-@keyframes cursor{
-    from{        
-        border-right-color: var(--yellow);
-    }    
-    to{
-        border-right-color: transparent;
-    }
-}
-
 /* #####        Projetos         ##### */
 @media(max-width: 700px){
 
