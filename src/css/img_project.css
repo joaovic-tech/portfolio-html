@@ -1,10 +1,11 @@
 .img_project{
     z-index: 0;
-    width: 367px;
-    height: 367px;
-    margin: 20px auto;   
-    border-radius: 30% 70% 70% 30% / 60% 53% 47% 40%;
-    animation: project_anime 1s infinite ease-in;
+    width: 500px;
+    height: 300px;
+    margin: 50px auto;  
+    border-radius: 33% 67% 25% 75% / 68% 30% 70% 32% ;
+    border: 5px solid var(--blue);
+    box-shadow: 0 0 20px var(--blue); 
 }
 
 #Tela-De-Login{  
@@ -32,15 +33,4 @@
     border-radius: 12px;
     background-image: url(../img/img_project/ValidarCPF.jpg);
     background-repeat: no-repeat;
-}
-
-@keyframes project_anime{
-    0%{
-        border: 5px solid var(--purple_dark);
-        box-shadow: 0 0 12px var(--purple_dark); 
-    }
-    100%{
-        border: 5px solid var(--purple);
-        box-shadow: 0 0 20px var(--purple); 
-    }
 }

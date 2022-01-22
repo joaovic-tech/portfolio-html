@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono&family=Ubuntu:ital,wght@1,700&display=swap');
 
 :root{
-    --dark: #121212;
+    --dark: rgba(25, 25, 25);
     --tranp: #00000060;
     --gray: #adb5bd67;
     --light: #F9FAFB;
@@ -591,8 +591,8 @@ img[src]{
     width: 150px;
     height: 150px;
     background: var(--tranp);
-    border: 2px solid var(--tranp);
-    border-radius: 14px;
+    border: 2px solid var(--tranp);    
+    clip-path: polygon(0% 0%, 20% 20%, 80% 20%, 100% 0%, 100% 60%, 70% 100%, 30% 100%, 0% 60%);
 }
 
 .icon_link{
@@ -674,8 +674,8 @@ img[src]{
 .card-mysql:focus{
     opacity: 1;
     background: var(--dark);
-    border: 2px solid var(--light);
-    box-shadow: 0px 0px 12px var(--green);
+    border: 2px solid var(--blue);
+    box-shadow: 0px 0px 12px var(--orange);
     text-shadow: 0 0 100px var(--light);
 }
 .card-java:hover,
@@ -805,6 +805,7 @@ img[src]{
     height: 180px;
     margin: 12px; 
     border-radius: 100%;
+    background: var(--purple);  
     box-shadow: 0 0 12px var(--light);
     border: 5px solid var(--light);
     animation: sombraIMG 1s linear infinite;
@@ -991,13 +992,11 @@ img[src]{
 }
 
 @keyframes sombraIMG{
-    0%{
-        background-image: linear-gradient(60deg, var(--purple)0%, var(--tranp) 100%);   
-        box-shadow: 0 0 50px var(--purple);
+    to{
+        box-shadow: 0 0 18px var(--purple);
     }
-    100%{
-        background-image: linear-gradient(-60deg, var(--red)0%, var(--tranp) 100%);   
-        box-shadow: 0 0 50px var(--red);
+    from{ 
+        box-shadow: 0 0 18px var(--red);
     }
 }
 

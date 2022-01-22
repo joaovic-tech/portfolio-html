@@ -1,11 +1,10 @@
 #grupoP {
     width: 100%;
-    max-width: 900px; 
+    max-width: 900px;
     margin: 100px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 14vh;
 }
 
 #grupoP h1,h3{
@@ -16,25 +15,19 @@
     line-height: 54px;
 }
 #grupoP h1{
+    border-right: 2px solid var(--yellow);
     font-size: 50px;
     color: var(--yellow);
+    white-space: nowrap;
+    overflow: hidden;
+    animation: cursor .5s infinite normal, digita 4s 1s infinite normal;
 }
+
 #grupoP h3{
     font-size: 20px;
     color: var(--blue);
 }
 
-#grupoP h1:after{
-    content: "";
-    position: absolute;
-    background-color: var(--yellow);
-    box-shadow: 0 5px 20px var(--yellow);
-    height: 3px;
-    width: 100%;
-    left: 0;
-    bottom: -10px;
-    transition: .2s;
-}
 #grupoP h3:after{
     content: "";
     position: absolute;
@@ -47,14 +40,6 @@
     transition: .2s;
 }
 
-.ContMaster {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-size: 300% 300%;
-} 
-
 @media(max-width: 320px){
     #grupoP h1{
         font-size: 20px;
@@ -64,7 +49,35 @@
     }
 }
 
-/* #####        Projetos     #### */
+.ContMaster{
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: 50px;
+    border-radius: 12px;
+    background: var(--tranp);
+}
+
+/* #####        Animações        ##### */
+@keyframes digita{
+    from{
+        width: 0;
+    }
+    to{
+        width: 250px;
+    }
+}
+
+@keyframes cursor{
+    from{        
+        border-right-color: var(--yellow);
+    }    
+    to{
+        border-right-color: transparent;
+    }
+}
+
+/* #####        Projetos         ##### */
 @media(max-width: 700px){
 
     .ContMaster{   
