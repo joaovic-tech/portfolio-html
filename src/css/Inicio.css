@@ -196,7 +196,7 @@ nav{
     text-align: center;
 }
 
-.iconNome{
+#iconNome{
     display: flex;
 }
 
@@ -974,6 +974,21 @@ img[src]{
         width: 150px;
         margin: 20px;
     }    
+}
+
+#span_config{
+    position: fixed;
+    top: 4.5rem;
+    right: .5rem;
+    font: 700 4em/1 "Oswald", sans-serif;
+    font-size: 2rem;
+    color: var(--light);
+}
+
+#span_config i{
+    font-size: 2rem;
+    color: var(--green);
+    animation: loading 2s infinite;
 }
 
 /*################################## Animações ##################################*/
