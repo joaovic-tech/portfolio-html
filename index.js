@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 3000;
 
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
-app.use(express.static(__dirname + '/src'));
+app.use(express.static(__dirname + '/assets'));
 app.set('views', path.join(__dirname, '/views'));
 
 app.get('/about', (req,res) => {
@@ -21,11 +21,11 @@ app.get('/about', (req,res) => {
 })
 
 router.get('/', function(req,res){
-    res.render('Inicio');
+    res.render('home');
 });
 
-router.get('/Inicio', function(req,res){
-    res.render('Inicio');
+router.get('/home', function(req,res){
+    res.render('home');
 });
 
 router.get('/Projetos', function(req,res){
