@@ -8,6 +8,8 @@ app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
 app.use(express.static(__dirname + '/assets'));
 app.set('views', path.join(__dirname, '/views'));
+app.use(express.static(__dirname + '/projects/design-login-cadastro/public'));
+app.use(express.static(__dirname + '/projects/Calculadora_Estilizada/public'));
 
 app.get('/about', (req,res) => {
     res.json({
@@ -24,27 +26,27 @@ router.get('/', function(req,res){
     res.render('home');
 });
 
-router.get('/home', function(req,res){
-    res.render('home');
-});
-
 router.get('/Projetos', function(req,res){
     res.render('projetos');
 });
 
 router.get('/Cadastro', function(req,res){
-    res.render('Cadastro');
-});
-
-router.get('/Calculadora', function(req,res){
-    res.render('Cadastro');
+    res.render(__dirname + '/projects/design-login-cadastro/views/Cadastro.html');
 });
 
 router.get('/Login', function(req,res){
-    res.render('Login');
+    res.render(__dirname + '/projects/design-login-cadastro/views/Login.html');
+});
+
+router.get('/Calculadora', function(req,res){
+    res.render(__dirname + '/projects/Calculadora_Estilizada/Calculadora.html');
 });
 
 app.use('/',router);
+
+app.use(function (req, res, next) {
+    res.status(404).render("404")
+})
 
 app.listen(PORT, () => {
     console.log(`Server do bolado lendário João rodando na porta: ${PORT}`);
