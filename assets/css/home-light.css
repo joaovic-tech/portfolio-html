@@ -123,13 +123,21 @@ nav.show div.icon-close {
   animation: bounceInUp 4s;
 }
 
+.cont-b a:hover,
+.cont-b a:focus{
+  color: var(--color-dark);
+}
+
 /* about */
+#about{
+  background: var(--color-dark);
+  box-shadow: 0 0 12px var(--color-shadow);
+  }
+
 .sub{
   margin: 10px;
   padding: 2rem;
   border-radius: 12px;
-  background: var(--light);
-  box-shadow: 0 0 12px var(--color-shadow);
 }
 
 .grupo_a{
@@ -138,24 +146,61 @@ nav.show div.icon-close {
 
 .grupo_a h2{
   position: relative;
+  margin: 10px auto;
   font: 400 2.5rem var(--font-family-title);
-  color: var(--green);
-  margin-bottom: 20px;
+  color: var(--color-primary);
+  text-shadow: 0 0 30px var(--color-primary);
 }
+
   
 .grupo_a h2::after{
   content: '';
   width: 100%;
   height: 2px;
-  background: linear-gradient(270deg, var(--green)50%, var(--color-light)100%);
+  background: linear-gradient(270deg, var(--color-primary)50%, var(--color-dark)100%);
   position: absolute;
   left: 0;
-  bottom: -0.1rem;
+  bottom: -1rem;
   transition: width 0.2s;
 }
 
+.grupo_a span.sub-title{
+  position: relative;
+  color: var(--light);
+  text-shadow: 0 0 30px var(--red);
+}
+
+.grupo_a i{
+  margin: 20px auto;
+}
+
+.grupo_a .fa-react{
+  text-shadow: 0 0 30px var(--blue);
+}
+
+.grupo_a .fa-js-square{
+  text-shadow: 0 0 30px var(--yellow);
+}
+
+.grupo_a .fa-node-js{
+  text-shadow: 0 0 30px var(--green);
+}
+
+.grupo_a span.sub-title::after{
+  content: '';
+  width: 100%;
+  margin: auto;
+  height: 2px;
+  background: linear-gradient(270deg, var(--red)50%, var(--color-dark)100%);
+  position: absolute;
+  left: 0;
+  bottom: -0.1rem;
+  animation: line_efect 1s infinite;
+}
 .grupo_a p{
+  margin: 20px;
   font: 400 1.5rem var(--font-family-title);
+  color: var(--color-light);
 }
 
 .grupo_b{
@@ -244,6 +289,7 @@ nav.show div.icon-close {
   height: 150px;  
   font-family: var(--font-family-sub);
   background: var(--light);
+  color: var(--color-dark);
   border: 5px solid transparent;
   box-shadow: 0px 0px 20px var(--color-shadow);
   border-radius: 12px;

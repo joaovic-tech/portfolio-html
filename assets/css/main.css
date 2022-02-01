@@ -25,7 +25,7 @@ img{
   --color-light: #E4E4E4;
   --light: #ffffff;
   --color-shadow: rgb(0 0 0 / 0.30);
-  --color-primary: #ff006e; 
+  --color-primary: #8338ec; 
   /* colors*/
   --purple: #8338ec;
   --purple-dark: #1a0538;
@@ -55,6 +55,12 @@ body{
 
 .title {
   font: 700 var(--font-size) var(--font-family-title);
+  color: var(--color-dark);
+  -webkit-font-smoothing: auto;
+}
+
+.sub-title {
+  font: 400 var(--font-size) var(--font-family-sub);
   color: var(--color-dark);
   -webkit-font-smoothing: auto;
 }
@@ -281,6 +287,7 @@ nav .menu ul {
 .name-profile{
   position: relative;
   font: 700 5rem var(--font-family-title);
+  text-shadow: 0 0 15px var(--color-primary);
   text-transform: uppercase;
   display: block;
   margin: auto;
@@ -472,6 +479,12 @@ nav.show div.icon-close {
 @media(max-width: 1100px){ 
   nav{
     justify-content: space-around;
+  }
+
+  #contact .header-profile{
+    display: grid;
+    align-items: center;
+    justify-content: center;
   }
 
   #cont-footer p, #cont-footer a {
