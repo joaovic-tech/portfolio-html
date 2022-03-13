@@ -6,3 +6,9 @@
     width: 100%;
   }
 }
+
+@keyframes text_shadow{
+  from{
+    text-shadow: 0 0 1rem transparent;
+  }
+}

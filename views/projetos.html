@@ -1,129 +1,82 @@
-<!-- 
-    █████████
-    █▄█████▄█
-    █▼▼▼▼▼
-    █
-     Hello World!!!
-    █▲▲▲▲▲
-    █████████
-     ██ ██
- -->
- <!DOCTYPE html>
- <html lang="pt-br">
- <head>
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="/css/projetos-light.css">
-     <link rel="stylesheet" href="/css/main.css">
-     <link rel="shortcut icon" href="/img/img_settings/logo_site.jpg">
-     <link rel="stylesheet" href="/css/anima.css">
-     <title>João Victor | Portfolio</title>
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">    
- </head>
- <body>
-    <header id="header">        
-        <nav class="container">
-            <a class="logo" href="/">João Victor |<span>| Portfolio <i class="fas fa-project-diagram"></i></span></a>         
-        </nav>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/projetos-light.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <title>Projetos | todos os projetos do João</title>
+  <link rel="shortcut icon" type="images" href="/img/logo.png">
+</head>
+<body>
+    <header id='header'>
+        <nav class="container" id='nav'>
+            <div class="menu-main">
+                <a class="logo" href="/">Voltar <i class="fa-solid fa-code-branch"></i>
+            </div>
+            <div id="perfil">
+                <div id="contDiv">
+                    <a href="/"><img src="/img/logo.png" alt="foto de perfil do joão"></a>
+                </div>
+                <span>By joaovic2k<i class="fa-solid fa-sort-down"></i>
+                    <ul class="menu-hover" id="menu-perfil">
+                        <i class="fa-solid fa-caret-up menuIconUp"></i>
+                        <li><a href="/" target="_blank">Inicio</a></li>
+                        <li><a href="https://www.instagram.com/joaovic2k/" target="_blank">Instagram</a></li>
+                        <li><a href="https://github.com/joaovic2k/" target="_blank">Github</a></li>
+                        <li><a href="https://www.linkedin.com/in/jo%C3%A3o-victor-790116213/" target="_blank">Linkedin</a></li>
+                      </ul>
+                </span>                
+            </div>
+        </nav>    
     </header>
-    <main>
-        <div class="divider-dark"></div>
-        <section class="section" id="projects">
-            
-            <div class="project">
-                <div class="pro-top">
-                    <div class="cont-imagem">
-                        <img src="img/img_project/Calculadora.jpg" alt="Imagem do projeto calculadora">
+  <main id="main">
+      <h1>Projetos</h1>
+      <p>Clique nas imagens para saber mais</p>
+      <ol id="list-project">
+        <li onclick="MenuModal()">
+            <div class="contProject">
+                <img src="/img/img_project/valorant.png" alt="Projeto web Valorant">      
+                <div class="cardDesc">
+                    <h3>Valorant</h3>
+                    <p>Esse projetos achei interesante fazer pois foi um desafio que me deram, esse tamplete se encontra no <a href="#">figma</a> e foi feito com HTML,CSS,JS e NodeJS </p>
+                    <div class="linkProject">
+                        <a href="https://github.com/joaovic2k/valorant">Ver repositório</a> | <a href="https://valorant-vic2k.vercel.app/">Ver Projeto</a>                        
                     </div>
-                    <h2 class="title">Calculadora</h2>
-                </div>
-                <div class="pro-bottom">
-                    <p class="text-p"> Criei uma calculadora utilizando <span class="color_orange">html</span>, <span class="color_blue">css</span> e <span class="color_red">js</span> para treinar programação e estilização <br> <a href="https://github.com/joaovic2k/Calculadora_Estilizada" class="color_red">Ver repositório</a>
-                    </p>
-                </div>
-            </div> 
-
-            <div class="project">
-                <div class="pro-top">
-                    <div class="cont-imagem">
-                        <img src="/img/img_project/design-cad.jpg" alt="Imagem do projeto">
+                </div>         
+            </div>
+            <h2 class="titleProject">Valorant</h2>
+        </li>
+        <li onclick="MenuModal()">
+            <div class="contProject">
+                <img src="/img/img_project/design-cad.png" alt="Projeto web Design Cadastro & login">    
+                <div class="cardDesc">
+                    <h3>Design Cadastro & Login</h3>
+                    <p>Projetinho de telas de login e cadastro para treinar responsividade usando: html, css e js</p>
+                    <div class="linkProject">
+                        <a href="https://github.com/joaovic2k/design-login-cadastro">Ver repositório</a>
                     </div>
-                    <h2 class="title">Cadastro | Login</h2>
-                </div>
-                <div class="pro-bottom">
-                    <p class="text-p"> Projetinho de telas de login e cadastro para treinar responsividade usando: 
-                        <br><span class="color_orange">html</span>, <span class="color_blue">css</span> e <span class="color_red">js</span><br><a href="https://github.com/joaovic2k/design-login-cadastro" class="color_red">Ver repositório</a>
-                    </p>
-                </div>
+                </div>      
             </div>
-            
-            <div class="project">
-                <div class="pro-top">
-                    <div class="cont-imagem">
-                        <img src="/img/img_project/Tela-De-Login.gif" alt="Imagem do projeto">
+            <h2 class="titleProject">Design Cadastro & Login</h2>
+        </li>
+        <li onclick="MenuModal()">
+            <div class="contProject">
+                <img src="/img/img_project/Calculadora.png" alt="Projeto web Calculadora">     
+                <div class="cardDesc">
+                    <h3>Calculadora</h3>
+                    <p>Criei uma calculadora utilizando html, css e js para treinar programação e estilização</p>
+                    <div class="linkProject">
+                        <a href="https://github.com/joaovic2k/Calculadora_Estilizada">Ver repositório</a>
                     </div>
-                    <h2 class="title">Tela de login</h2>
-                </div>
-                <div class="pro-bottom">
-                    <p class="text-p"> Essa é minha primeira Tela de Login Simples utilizando <span class="color_orange">HTML</span> & <span class="color_blue">CSS</span> PURO<br><a href="https://github.com/joaovic2k/Tela-de-Login" class="color_red">Ver repositório</a></p>
-                </div>
+                </div>           
             </div>
-            
-        </section>
-    </main>
-    <div class="divider-dark"></div>
-    <!-- ######################### FOOTER ######################### -->    
-    <footer id="contact">
-        <div class="container">
-            <header class="container grid cont header-profile">
-                <div class="div-img-profile">
-                    <img src="/img/img_eu.png" alt="Foto do João">
-                </div>
-                <p>   
-                    <span class="name-profile">João victor</span>
-                    &mdash; 
-                    <i class="fab fa-html5 color_orange"></i>
-                    &mdash; 
-                    <i class="fab fa-css3-alt color_blue"></i>
-                    &mdash; 
-                    <i class="fab fa-js-square color_yellow"></i>
-                    &mdash; 
-                    <i class="fab fa-node-js color_green"></i>
-                    &mdash;         
-                    <i class="fab fa-python color_blue_green"></i> 
-                    &mdash;  
-                </p>
-            </header> 
-            <div id="cont-footer">
-                <h2 class="title">&mdash;Contato&mdash;</h2>
-                <p>
-                    <a href="https://github.com/joaovic2k" class="icon_contato" id="iconG">GitHub: <i class="fab fa-github"></i></a>
-                    <a href="https://www.instagram.com/joaovic2k" class="icon_contato" id="iconI">Instagram: <i class="fab fa-instagram"></i></a>
-                    <a href="https://t.me/joaovic2k" class="icon_contato" id="iconT">Telegram: <i class="fab fa-telegram" id="iconT"></i></a>
-                    <a href="https://www.linkedin.com/in/jo%C3%A3o-victor-790116213/" class="icon_contato" id="iconL">Linkedin: <i class="fab fa-linkedin"></i></a>
-                    <a href="https://wa.me/+5548999227431" class="icon_contato" id="iconW">Whatsapp: <i class="fab fa-whatsapp-square"></i></a>
-                </p>
-            </div>
-            <p class="tec_i">Tecnologias usadas para construção do site <br>
-                &mdash; 
-                <i class="fab fa-html5"></i>
-                &mdash; 
-                <i class="fab fa-css3-alt"></i>
-                &mdash; 
-                <i class="fab fa-js-square"></i>
-                &mdash; 
-                <i class="fab fa-node-js"></i>
-                &mdash; 
-                <i class="fab fa-github"></i>
-                &mdash; 
-                <i class="fab fa-git-alt"></i> 
-                &mdash; <br>            
-            </p>
-        </div>
-    </footer>    
-    <div class="divider-dark"></div>
-     <script src="js/main.js"></script>
+            <h2 class="titleProject">Calculadora</h2>
+        </li>
+      </ol>
+  </main>
+  <!-- FontWesome -->
+  <script src="https://kit.fontawesome.com/673aed7dea.js" crossorigin="anonymous"></script>
 </body>
 </html>

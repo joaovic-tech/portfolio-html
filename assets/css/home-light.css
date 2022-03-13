@@ -1,124 +1,70 @@
-/*====  NAVIGATION ============================ */
-nav {
-  height: var(--header-height);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-}
-
-nav ul li {
-  text-align: center;
-}
-
-nav ul li a {
-  text-decoration: none;
-  transition: color 0.2s;
-  position: relative;
-}
-
-nav ul li a:hover,
-nav ul li a.active {
-  color: var(--color-primary);
-}
-
-nav ul li a::after {
-  content: '';
-  width: 0%;
-  height: 2px;
-  background: var(--color-primary);
-
-  position: absolute;
-  left: 0;
-  bottom: -1.5rem;
-
-  transition: width 0.2s;
-}
-
-nav ul li a:hover::after,
-nav ul li a.active::after {
-  width: 100%;
-}
-
-nav .menu {
-  opacity: 0;
-  visibility: hidden;
-  top: -20rem;
-  transition: 0.2s;
-}
-
-nav .menu ul {
-  display: none;
-}
-
-/* Mostrar menu */
-nav.show .menu {
-  opacity: 1;
-  visibility: visible;
-
-  background: var(--light);
-
-  height: 100vh;
-  width: 100vw;
-
-  position: fixed;
-  top: 0;
-  left: 0;
-
-  display: grid;
-  place-content: center;
-}
-
-nav.show .menu ul {
-  display: grid;
-}
-
-nav.show ul.grid {
-  gap: 4rem;
-}
-
-/* toggle menu */
-.toggle {
-  color: var(--color-dark);
-  font-size: 1.5rem;
-  cursor: pointer;
-}
-
-.toggle:hover,
-.toggle:focus{
-  color: var(--color-primary);
-}
-
-nav .icon-close {
-  visibility: hidden;
-  opacity: 0;
-
-  position: absolute;
-  top: -1.5rem;
-  right: 1.5rem;
-
-  transition: 0.2s;
-}
-
-nav.show div.icon-close {
-  visibility: visible;
-  opacity: 1;
-  top: 1.5rem;
-}
-
 /* Home */
+#home{
+  position: relative;
+  text-align: center;
+  display: grid;
+  justify-content: center;
+  margin-top: 8rem;
+  z-index: 4;
+}
 
-/* text/home */
+.textHome{
+  padding: 2rem;
+  border-radius: 1rem;
+  color: var(--b1);
+}
+
+.textHome p{
+  font-size: 2rem;
+  font-family: var(--font-family-secundary);
+  text-shadow: 0 0 1rem var(--b1);
+}
+
+.textHome p span.color_purple{
+  text-shadow: 0 0 1rem var(--purple);
+}
+
+.textHome p span.color_green{
+  text-shadow: 0 0 1rem var(--green);
+}
+
+.textHome h1{
+  font-family: var(--font-family-primary);
+  font-size: 3rem;
+  text-shadow: 0 0 1rem var(--b1);
+}
+
+.textHome i{
+  font-size: 1.8rem;
+}
+
+.contImg{
+  width: 12rem;
+  margin: auto;
+}
+
+.contImg img{
+  width: 100%;
+}
+
+#pulse-img{ 
+  position: relative; 
+  border-radius: 100%;
+  background-image: linear-gradient(190deg, var(--color-dark), var(--b1));
+  border: .5rem solid var(--b1);
+  box-shadow: 0 0 2rem var(--b1);
+}
+
 .cont-a,
 .cont-b{
   width: 30rem;  
   height: 150px;
   font-size: 1.5rem;
-  font-family: var(--font-family-sub);
+  font-family: var(--font-family-primary);
   margin: 20px auto;
   padding: 2rem;
   border-radius: 12px;
-  background: var(--light);
+  background: var(--color-light);
   box-shadow: 0 0 12px var(--color-shadow);
   animation: bounceInUp 4s;
 }
@@ -126,6 +72,26 @@ nav.show div.icon-close {
 .cont-b a:hover,
 .cont-b a:focus{
   color: var(--color-dark);
+}
+
+.btn-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 10rem;
+  height: 3rem;
+  background: rgba(0,0,0,.5);
+  color: var(--color-light-alt);
+  border-radius: .5rem;
+  transition: .2s ease-out;
+}
+
+.btn-link:focus,
+.btn-link:hover{
+  background: var(--color-primary);
+  color: var(--color-light);
+  box-shadow: 0 0 3rem var(--color-primary);
 }
 
 /* about */
@@ -136,7 +102,6 @@ nav.show div.icon-close {
 
 .sub{
   margin: 10px;
-  padding: 2rem;
   border-radius: 12px;
 }
 
@@ -147,7 +112,7 @@ nav.show div.icon-close {
 .grupo_a h2{
   position: relative;
   margin: 10px auto;
-  font: 400 2.5rem var(--font-family-title);
+  font: 400 2.5rem var(--font-family-primary);
   color: var(--color-primary);
   text-shadow: 0 0 30px var(--color-primary);
 }
@@ -166,7 +131,7 @@ nav.show div.icon-close {
 
 .grupo_a span.sub-title{
   position: relative;
-  color: var(--light);
+  color: var(--color-light);
   text-shadow: 0 0 30px var(--red);
 }
 
@@ -176,14 +141,17 @@ nav.show div.icon-close {
 
 .grupo_a .fa-react{
   text-shadow: 0 0 30px var(--blue);
+  animation: text_shadow 1s ease-out infinite;
 }
 
 .grupo_a .fa-js-square{
   text-shadow: 0 0 30px var(--yellow);
+  animation: text_shadow 1s ease-out infinite;
 }
 
 .grupo_a .fa-node-js{
   text-shadow: 0 0 30px var(--green);
+  animation: text_shadow 1s ease-out infinite;
 }
 
 .grupo_a span.sub-title::after{
@@ -199,7 +167,7 @@ nav.show div.icon-close {
 }
 .grupo_a p{
   margin: 20px;
-  font: 400 1.5rem var(--font-family-title);
+  font: 400 1.5rem var(--font-family-primary);
   color: var(--color-light);
 }
 
@@ -208,13 +176,9 @@ nav.show div.icon-close {
 }
 
 #Saly-13{
-  width: 400px;
-  height: 400px;
+  width: 410px;
+  height: 410px;
   margin: 20px auto;
-  background: var(--color-light);
-  border: 2px solid var(--color-light);
-  box-shadow: 0 0 20px var(--color-shadow);
-  border-radius: 30% 70% 70% 30% / 60% 53% 47% 40%;
   background-image: url("../img/icon/Saly-13.png");
   background-repeat: no-repeat;
 }
@@ -226,8 +190,8 @@ nav.show div.icon-close {
 
 #skills h2{
   position: relative;
-  font: 400 2.5rem var(--font-family-title);
-  margin-bottom: 50px;
+  font: 400 2.5rem var(--font-family-primary);
+  margin: 50px auto;
 }
 
 #skills a{
@@ -287,8 +251,8 @@ nav.show div.icon-close {
   margin: 10px;
   width: 150px;
   height: 150px;  
-  font-family: var(--font-family-sub);
-  background: var(--light);
+  font-family: var(--font-family-secundary);
+  background: var(--color-light);
   color: var(--color-dark);
   border: 5px solid transparent;
   box-shadow: 0px 0px 20px var(--color-shadow);
@@ -297,7 +261,11 @@ nav.show div.icon-close {
 }
 
 .DivLink:hover{    
-  transform: translateY(-1.5rem);
+  transform: scale(1.2);
+}
+
+.span_icon{
+  color: var(--color-dark);
 }
 
 .card-html:hover,
@@ -305,7 +273,7 @@ nav.show div.icon-close {
   background: var(--color-dark);
   border: .3rem solid var(--orange);
   box-shadow: 0px 0px 20px var(--orange);
-  text-shadow: 0 0 100px var(--light);
+  text-shadow: 0 0 100px var(--color-light);
 }
 .card-html:hover i,
 .card-html:focus i,
@@ -320,7 +288,7 @@ nav.show div.icon-close {
   background: var(--color-dark);
   border: .3rem solid var(--blue);
   box-shadow: 0px 0px 20px var(--blue);
-  text-shadow: 0 0 100px var(--light);
+  text-shadow: 0 0 100px var(--color-light);
 }
 .card-css:hover i,
 .card-css:focus i,
@@ -335,7 +303,7 @@ nav.show div.icon-close {
   background: var(--color-dark);
   border: .3rem solid var(--yellow);
   box-shadow: 0px 0px 20px var(--yellow);
-  text-shadow: 0 0 100px var(--light);
+  text-shadow: 0 0 100px var(--color-light);
 }
 .card-js:hover i,
 .card-js:focus i,
@@ -350,7 +318,7 @@ nav.show div.icon-close {
   background: var(--color-dark);
   border: .3rem solid var(--red);
   box-shadow: 0px 0px 20px var(--red);
-  text-shadow: 0 0 100px var(--light);
+  text-shadow: 0 0 100px var(--color-light);
 }
 .card-git:hover i,
 .card-git:focus i,
@@ -363,15 +331,15 @@ nav.show div.icon-close {
 .card-github:focus{
   opacity: 1;
   background: var(--color-dark);
-  border: .3rem solid var(--light);
+  border: .3rem solid var(--color-light);
   box-shadow: 0px 0px 20px var(--color-shadow);
-  text-shadow: 0 0 100px var(--light);
+  text-shadow: 0 0 100px var(--color-light);
 }
 .card-github:hover i,
 .card-github:focus i,
 .card-github:hover span,
 .card-github:focus span{
-  color: var(--light);
+  color: var(--color-light);
 }
 
 .card-py:hover,
@@ -380,7 +348,7 @@ nav.show div.icon-close {
   background: var(--color-dark);
   border: .3rem solid var(--yellow);
   box-shadow: 0px 0px 20px var(--blue);
-  text-shadow: 0 0 100px var(--light);
+  text-shadow: 0 0 100px var(--color-light);
 }
 .card-py:hover i,
 .card-py:focus i,
@@ -397,7 +365,7 @@ nav.show div.icon-close {
   background: var(--color-dark);
   border: .3rem solid var(--green);
   box-shadow: 0px 0px 20px var(--green);
-  text-shadow: 0 0 100px var(--light);
+  text-shadow: 0 0 100px var(--color-light);
 }
 .card-node:hover i,
 .card-node:focus i,
@@ -412,7 +380,7 @@ nav.show div.icon-close {
   background: var(--color-dark);
   border: .3rem solid var(--blue);
   box-shadow: 0px 0px 20px var(--blue);
-  text-shadow: 0 0 100px var(--light);
+  text-shadow: 0 0 100px var(--color-light);
 }
 .card-php:hover i,
 .card-php:focus i,
@@ -427,7 +395,7 @@ nav.show div.icon-close {
   background: var(--color-dark);
   border: .3rem solid var(--blue);
   box-shadow: 0px 0px 20px var(--orange);
-  text-shadow: 0 0 100px var(--light);
+  text-shadow: 0 0 100px var(--color-light);
 }
 .card-mysql:hover i,
 .card-mysql:focus i,
@@ -444,7 +412,7 @@ nav.show div.icon-close {
   background: var(--color-dark);
   border: .3rem solid var(--blue);
   box-shadow: 0px 0px 20px var(--red);
-  text-shadow: 0 0 100px var(--light);
+  text-shadow: 0 0 100px var(--color-light);
 }
 .card-java:hover i,
 .card-java:focus i,
@@ -463,10 +431,6 @@ nav.show div.icon-close {
 }
 
 @media(max-width: 1100px){
-  /* reusable classes */  
-  nav{
-    justify-content: space-around;
-  }
 
   .header-profile{
     display: grid;
@@ -487,8 +451,12 @@ nav.show div.icon-close {
       align-items: center;
   } 
 
+  #skills h2{
+    font-size: 2rem;
+  }
+
   #linguages{        
-      display: flex;
+      display: grid;
   }
   .ling{
       display: block;
@@ -506,6 +474,14 @@ nav.show div.icon-close {
     width: 300px;
     height: 300px;
   }
+
+  #Div_snake{
+    margin: auto;
+  }
+
+  #Div_snake img{
+    width: 100%;
+  }
   
   #cont-footer p, #cont-footer a {
     display: block;
@@ -514,7 +490,13 @@ nav.show div.icon-close {
 }
 
 @media(max-width: 380px){
-  .name-profile{
-    font: 500 2rem var(--font-family-title);
+  p .name-profile{
+    font: 500 2rem var(--font-family-primary);
+    margin-bottom: 1.5rem;
+  }
+
+    
+  p .name-profile::after{
+    bottom: -.5rem;
   }
 }

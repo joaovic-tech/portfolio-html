@@ -16,62 +16,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/home-light.css">
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="shortcut icon" href="/img/img_settings/logo_site.jpg">
+    <link rel="shortcut icon" href="/img/logo.png">
     <link rel="stylesheet" href="/css/anima.css">
     <title>João Victor | Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>   
 </head>
 <body>
-    <header id="header">        
-        <nav class="container">
-            <a class="logo" href="#">João Victor |<span>| Portfolio</span></a>
-            <div class="menu">
-                <ul class="grid">
-                    <li><a class="title" href="#home"><i class="fas fa-home"></i> Início</a></li>
-                    <li><a class="title" href="#about"><i class="fas fa-house-user"></i> Sobre</a></li>
-                    <li><a class="title" href="#skills"><i class="fas fa-sitemap"></i> Habilidades</a></li>
-                    <li><a class="title" href="#contact"><i class="fas fa-address-card"></i> Contato</a></li>
-                    <li><a class="title" href="/Projetos"><i class="fas fa-project-diagram"></i> Projetos</a></li>
-                </ul>
-            </div>             
-            <div class="fas fa-bars toggle icon-menu"></div> 
-            <div class="fas fa-times toggle icon-close"></div>            
-        </nav>
+    <svg id="svg-topo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#1F2326" fill-opacity="1" d="M0,96L17.1,96C34.3,96,69,96,103,101.3C137.1,107,171,117,206,128C240,139,274,149,309,176C342.9,203,377,245,411,234.7C445.7,224,480,160,514,160C548.6,160,583,224,617,224C651.4,224,686,160,720,160C754.3,160,789,224,823,256C857.1,288,891,288,926,282.7C960,277,994,267,1029,250.7C1062.9,235,1097,213,1131,218.7C1165.7,224,1200,256,1234,240C1268.6,224,1303,160,1337,122.7C1371.4,85,1406,75,1423,69.3L1440,64L1440,0L1422.9,0C1405.7,0,1371,0,1337,0C1302.9,0,1269,0,1234,0C1200,0,1166,0,1131,0C1097.1,0,1063,0,1029,0C994.3,0,960,0,926,0C891.4,0,857,0,823,0C788.6,0,754,0,720,0C685.7,0,651,0,617,0C582.9,0,549,0,514,0C480,0,446,0,411,0C377.1,0,343,0,309,0C274.3,0,240,0,206,0C171.4,0,137,0,103,0C68.6,0,34,0,17,0L0,0Z"></path>
+    </svg>
+    <header id='header'>
+        <nav class="container" id='nav'>
+            <div class="menu-main">
+                <a class="logo" href="/">Portfolio <i class="fa-solid fa-mug-hot"></i></a>
+            </div>
+            <div id="perfil">
+                <div id="contDiv">
+                    <a href="/"><img src="/img/logo.png" alt="foto de perfil do joão"></a>
+                </div>
+                <span>By joaovic2k<i class="fa-solid fa-sort-down"></i>
+                    <ul class="menu-hover" id="menu-perfil">
+                    <i class="fa-solid fa-caret-up menuIconUp"></i>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                    <li><a href="/Projetos">Projetos</a></li>
+                    </ul>
+                </span>                
+            </div>
+        </nav>    
     </header>
     <main>  
 <!-- ######################### HOME ######################### -->         
-        <section class="section" id="home">
-            <header class="container grid cont header-profile"> 
-                <div class="div-img-profile">
-                    <img src="/img/img_eu.png" alt="Foto do João">
-                </div>               
-                <p>   
-                    <span class="name-profile">João victor</span>
-                    &mdash; 
-                    <i class="fab fa-html5 color_orange"></i>
-                    &mdash; 
-                    <i class="fab fa-css3-alt color_blue"></i>
-                    &mdash; 
-                    <i class="fab fa-js-square color_yellow"></i>
-                    &mdash; 
-                    <i class="fab fa-node-js color_green"></i>
-                    &mdash;         
-                    <i class="fab fa-python color_blue_green"></i> 
-                    &mdash;  
-                </p>
-            </header>         
-            <div class="container cont margin">
-                <div class="cont-a">
-                    <p><span class="color_purple">print</span>("<span class="color_green">OLÁ, SEJA BEM-VINDO(A)!</span>")<br> 
-                    Meu nome é <span> João Victor </span>, esse aqui é o meu portfolio.</p>
-                </div>  
-                <div class="cont-b">
-                    <p>Nesse portfolio mostrarei a você meus <a href="/Projetos" class="color_yellow">projetos</a>,<a href="#Objetivos" class="color_blue">objetivos</a> e <a href="#skills" class="color_red">habilidades</a>.</p>
-                </div> 
-            </div> 
+        <section id="home">
+            <div class="contImg">
+                <img id="pulse-img" src="/img/logo.png" alt="Imagem do João">
+            </div>
+            <div class="textHome">
+                <p><span class="color_purple">print</span>("<span class="color_green">Hello World, Meu nome é João Victor  <i class="fa-solid fa-mug-hot"></i></a></span>")</p>
+                <h1>Front-end Developer</h1>
+                &mdash; 
+                <i class="fab fa-html5 color_orange"></i>
+                &mdash; 
+                <i class="fab fa-css3-alt color_blue"></i>
+                &mdash; 
+                <i class="fab fa-js-square color_yellow"></i>
+                &mdash; 
+                <i class="fab fa-node-js color_green"></i>
+                &mdash;         
+                <i class="fab fa-python color_blue_green"></i> 
+                &mdash; 
+            </div>
+            <a href="/Projetos" class="btn-link">Meus Projetos</a>
         </section> 
-        <div class="divider-1"></div>  
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style="position: relative;top: 1rem;"><path fill="#1F2326" fill-opacity="1" d="M0,96L17.1,96C34.3,96,69,96,103,101.3C137.1,107,171,117,206,128C240,139,274,149,309,176C342.9,203,377,245,411,234.7C445.7,224,480,160,514,160C548.6,160,583,224,617,224C651.4,224,686,160,720,160C754.3,160,789,224,823,256C857.1,288,891,288,926,282.7C960,277,994,267,1029,250.7C1062.9,235,1097,213,1131,218.7C1165.7,224,1200,256,1234,240C1268.6,224,1303,160,1337,122.7C1371.4,85,1406,75,1423,69.3L1440,64L1440,320L1422.9,320C1405.7,320,1371,320,1337,320C1302.9,320,1269,320,1234,320C1200,320,1166,320,1131,320C1097.1,320,1063,320,1029,320C994.3,320,960,320,926,320C891.4,320,857,320,823,320C788.6,320,754,320,720,320C685.7,320,651,320,617,320C582.9,320,549,320,514,320C480,320,446,320,411,320C377.1,320,343,320,309,320C274.3,320,240,320,206,320C171.4,320,137,320,103,320C68.6,320,34,320,17,320L0,320Z"></path></svg> 
 <!-- ######################### ABOUT ######################### -->         
         <section class="section"  id="about">
             <div class="container cont">
@@ -104,8 +103,11 @@
                         </div>  
                     <div data-anime="right">
                             <p>Já possuo uma grande base com desenvolvimento web e ultimamente estou focado em desenvolvimento mobile, utilizando <span class="color_blue">React.</span>
-                            Mas aberto para trabalhar e estudar novas linguagens.
+                            Mas aberto para trabalhar e estudar novas linguagens e tecnologias.
                             </p>
+                            <div class="contImg">
+                                <img src="/svg/undraw_developer_activity_re_39tg.svg" alt="">
+                            </div>
                         </div>
                     </div>
                 </div> 
@@ -113,8 +115,10 @@
                     <div id="Saly-13"></div>                     
                 </div>
             </div>
-        </section>        
-        <div class="divider-2"></div>
+        </section>  
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#1F2326" fill-opacity="1" d="M0,96L17.1,96C34.3,96,69,96,103,101.3C137.1,107,171,117,206,128C240,139,274,149,309,176C342.9,203,377,245,411,234.7C445.7,224,480,160,514,160C548.6,160,583,224,617,224C651.4,224,686,160,720,160C754.3,160,789,224,823,256C857.1,288,891,288,926,282.7C960,277,994,267,1029,250.7C1062.9,235,1097,213,1131,218.7C1165.7,224,1200,256,1234,240C1268.6,224,1303,160,1337,122.7C1371.4,85,1406,75,1423,69.3L1440,64L1440,0L1422.9,0C1405.7,0,1371,0,1337,0C1302.9,0,1269,0,1234,0C1200,0,1166,0,1131,0C1097.1,0,1063,0,1029,0C994.3,0,960,0,926,0C891.4,0,857,0,823,0C788.6,0,754,0,720,0C685.7,0,651,0,617,0C582.9,0,549,0,514,0C480,0,446,0,411,0C377.1,0,343,0,309,0C274.3,0,240,0,206,0C171.4,0,137,0,103,0C68.6,0,34,0,17,0L0,0Z"></path>
+        </svg>
 <!-- ######################### SKILLS ######################### -->         
         <section class="section" id="skills">                                   
             <h2 data-anime="bottom">Habilidades</h2>
@@ -184,10 +188,10 @@
         <div class="container">
             <header class="container grid cont header-profile">
                 <div class="div-img-profile">
-                    <img src="/img/img_eu.png" alt="Foto do João">
+                    <img src="/img/logo.png" alt="Foto do João">
                 </div>
                 <p>   
-                    <span class="name-profile">João victor</span>
+                    <span class="name-profile">João victor <i class="fa-solid fa-mug-hot"></i></a></span>
                     &mdash; 
                     <i class="fab fa-html5 color_orange"></i>
                     &mdash; 
@@ -229,7 +233,13 @@
         </div>
     </footer>    
     <div class="divider-footer"></div>
-    <script src="js/main.js"></script>
+    <!-- FontWesome -->
+    <script src="https://kit.fontawesome.com/673aed7dea.js" crossorigin="anonymous"></script>
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Main.js -->
+    <script src="/js/main.js"></script>
+    
 </body>
 </html>
 <!-- 
