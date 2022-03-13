@@ -493,8 +493,8 @@
   p .name-profile{
     font: 500 2rem var(--font-family-primary);
     margin-bottom: 1.5rem;
+    display: block;
   }
-
     
   p .name-profile::after{
     bottom: -.5rem;
