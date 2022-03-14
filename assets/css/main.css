@@ -51,6 +51,10 @@ img {
   background-color: var(--color-primary);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body{
   background: var(--color-light-alt);
 }
@@ -471,8 +475,37 @@ body{
     display: block;
   }
 }
+
+@media(max-width: 500px){
+  p .name-profile{
+    font: 500 2rem var(--font-family-primary);
+    margin-bottom: 1.5rem;
+    display: block;
+  }
+    
+  p .name-profile::after{
+    bottom: -.5rem;
+  }
+}
+
 @media(max-width: 500px){
   #svg-topo{
     top: 2rem;
+  }
+
+  #perfil span{
+    font-size: 1rem;
+  }
+}
+
+@media(max-width: 360px){
+  #perfil span,
+  #nav a.logo{
+    font-size: .8rem;
+  }
+  
+  nav#nav.container{
+    margin-left: .5rem;
+    margin-right: .5rem;
   }
 }

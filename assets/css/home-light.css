@@ -489,7 +489,7 @@
 
 }
 
-@media(max-width: 380px){
+@media(max-width: 500px){
   p .name-profile{
     font: 500 2rem var(--font-family-primary);
     margin-bottom: 1.5rem;

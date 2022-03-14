@@ -4,6 +4,9 @@ header #contDiv{
 
 #main{
   text-align: center;
+  display: grid;
+  align-items: center;
+  justify-content: center;
 }
 
 #main h1{
@@ -17,15 +20,14 @@ p{
 }
 
 #list-project{
-  display: grid;
-  grid-gap: 2.5rem;
-  margin-left: 1.2rem;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  display: inline-block;
+  margin: auto;
   list-style: none;
 }
 
 #list-project li{
   display: inline-block;
+  margin: 1rem;
 }
 
 .contProject{
@@ -33,11 +35,12 @@ p{
   display: grid;
   text-align: center;
   margin-top: 3rem;
+  max-width: 25rem;
 }
 
 .contProject img{
   position: relative;
-  width: 25rem;
+  width: 100%;
   border-radius: .5rem;
   box-shadow: 0 0 .5rem var(--color-tranp);
   z-index: 1;
@@ -87,4 +90,11 @@ p{
   position: absolute;
   bottom: 1rem;
   width: 100%;
+}
+
+@media(max-width: 1250px){
+  #list-project{
+    margin: auto;
+    display: block;
+  }
 }
