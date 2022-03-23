@@ -9,7 +9,7 @@ app.set('view engine', 'html');
 app.use(express.static(__dirname + '/assets'));
 app.set('views', path.join(__dirname, '/views'));
 app.use(express.static(__dirname + '/projects/design-login-cadastro/public'));
-app.use(express.static(__dirname + '/projects/Calculadora_Estilizada/public'));
+app.use(express.static(__dirname + '/projects/Calculadora_Estilizada/'));
 
 app.get('/about', (req,res) => {
     res.json({
@@ -39,7 +39,7 @@ router.get('/Login', function(req,res){
 });
 
 router.get('/Calculadora', function(req,res){
-    res.render(__dirname + '/projects/Calculadora_Estilizada/Calculadora.html');
+    res.render(__dirname + '/projects/Calculadora_Estilizada/calculadora.html');
 });
 
 app.use('/',router);
