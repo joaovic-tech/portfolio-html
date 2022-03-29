@@ -3,25 +3,30 @@ header #contDiv{
 }
 
 #main{
+  position: relative;
   text-align: center;
   display: grid;
   align-items: center;
   justify-content: center;
+  margin: 4rem auto;
 }
 
 #main h1{
+  color: var(--color-primary);
+  text-shadow: 0 0 1rem var(--color-primary);
   font-family: var(--font-family-primary);
   font-size: 3rem;
-  margin-top: 10rem;
 }
 
 p{
+  color: var(--color-primary);
+  text-shadow: 0 0 1rem var(--color-primary);
   font-family: var(--font-family-secundary);
 }
 
 #list-project{
   display: inline-block;
-  margin: auto;
+  margin: 8rem auto;
   list-style: none;
 }
 
@@ -69,10 +74,13 @@ p{
 }
 
 .cardDesc h3{
+  text-shadow: 0 0 1rem var(--color-light);
   margin: 1rem auto;
 }
 
 .cardDesc p{
+  color: var(--color-light);
+  text-shadow: 0 0 1rem transparent;
   font-size: 1.1rem;
   margin: 2rem;
 }

@@ -50,10 +50,11 @@
 #pulse-img{ 
   position: relative; 
   border-radius: 100%;
-  background-image: linear-gradient(190deg, var(--color-dark), var(--b1));
-  border: .5rem solid var(--b1);
-  box-shadow: 0 0 2rem var(--b1);
+  background-image: linear-gradient(190deg, var(--b1), var(--color-primary));
+  border: .2rem solid var(--color-light-alt);
+  box-shadow: 0 0 2rem var(--color-primary);
 }
+
 
 .cont-a,
 .cont-b{

@@ -338,7 +338,7 @@ body{
 #contact{
   text-align: center;
   background: var(--color-dark);
-  padding: 50px;
+  padding: 3rem;
 }
 
 .header-profile{
@@ -456,6 +456,30 @@ body{
   text-shadow: 0 0px 20px var(--color-primary);
   font-size: 20px;
   color: var(--color-light);
+}
+
+#contact .btn-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  height: 3rem;
+  margin: 2rem auto;
+  background: rgba(0,0,0,.5);
+  color: var(--color-light-alt);
+  border-radius: .5rem;
+  transition: .2s ease-out;
+}
+
+#contact .btn-link:focus,
+#contact .btn-link:hover{
+  background: var(--color-primary);
+  color: var(--color-light);
+  box-shadow: 0 0 3rem var(--color-primary);
+}
+
+#contact .btn-link i{
+  margin-left: .5rem;
 }
 
 #svg-topo{

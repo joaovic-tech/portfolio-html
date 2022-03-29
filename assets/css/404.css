@@ -1,10 +1,19 @@
-.back-cont{
-  width: 100%;
-  height: 100vh;
-  margin: auto;
+html body{
+  overflow: hidden;
   background: var(--color-dark);
-  backdrop-filter: blur(30px);
-  border-radius: 24px;  
+}
+
+.back-cont{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80rem;
+  border-radius: .5rem;
+  z-index: 5;
+  background: var(--color-tranp);
+  box-shadow: 0 0 2rem var(--color-tranp);
+  backdrop-filter: blur(1rem);
 }
 
 .allDiv{
@@ -14,47 +23,43 @@
 }
 
 .allDiv h1{
-  color: var(--color-light);
+  font-size: 8rem;
+  color: var(--color-primary);
 }
 
 .allDiv h2{
-  font-size: 8rem;
+  color: var(--color-light);
   position: relative;
-  color: var(--light);
 }
 
 .allDiv h2::after{
   content: '';
   width: 100%;
   height: 2px;
-  background: linear-gradient(270deg, var(--color-primary)50%, var(--color-dark)100%);
+  background: linear-gradient(270deg, var(--color-light)50%, transparent 100%);
   position: absolute;
   left: 0;
-  bottom: 1rem;
+  bottom: -1rem;
   transition: width 0.2s;
   animation: line_efect 2s infinite;
 }
 
 a{
-  width: 50%;
-  height: 40px;
   display: flex;
   justify-content: center;
-  align-items: center;  
-  margin: auto;
-  text-decoration: none;  
-  padding: 2px 10px;
-  font-size: 1.5rem;
-  font-family: var(--font-family-sub);
-  background: transparent;
-  color: var(--color-light);
-  border-top: 3px solid var(--color-light);
-  border-bottom: 3px solid var(--color-light);
-  border-radius: 6px;
+  align-items: center;
+  width: 10rem;
+  height: 3rem;
+  margin: 5rem auto;
+  background: rgba(0,0,0,.5);
+  color: var(--color-light-alt);
+  border: .2rem solid var(--color-primary);
+  border-radius: .5rem;
 }
 
+a:focus,
 a:hover{
-  background: var(--color-light);
-  color: var(--color-tranp);
-  box-shadow: 0 0 12px var(--color-light);
+  background: var(--color-primary);
+  color: var(--color-light);
+  box-shadow: 0 0 .2rem var(--color-primary);
 }
