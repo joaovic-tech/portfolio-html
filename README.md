@@ -30,3 +30,15 @@
 </div>
 <a href="https://programandosolucoes.dev.br/2021/04/27/configurar-utilizar-nodemon/">Saiba mais...</a>
 <hr>
+<div align="center"><br>
+  <h1>Tecnologias utulizadas:</h1>
+  
+  ![HTML](./svgs/html.svg) &nbsp;
+  ![CSS](./svgs/css.svg) &nbsp;
+  ![JS](./svgs/js.svg) &nbsp;
+  ![Figma](./svgs/nodejs.svg) &nbsp;
+  ![Git](./svgs/git.svg) &nbsp;
+  ![VSCode](./svgs/vscode.svg) &nbsp;
+  ![Figma](./svgs/figma.svg) &nbsp;
+  
+</div>
