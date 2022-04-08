@@ -8,7 +8,7 @@
   <img src="./portfolio-smartphone.jpeg" width="180px">
 </div>
 
-# <a href="https://nodejs.org/en/about/">Comandos ultilixados do NodeJs</a>
+# <a href="https://nodejs.org/en/about/">Comandos utilizados do NodeJs</a>
 <div>
   <h3>npm init</h3> 
   <p>iniciar o node</p>
