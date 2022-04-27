@@ -9,31 +9,20 @@ app.set('view engine', 'html');
 app.use(express.static(__dirname + '/assets'));
 app.set('views', path.join(__dirname, '/views'));
 
-app.get('/about', (req,res) => {
-    res.json({
-        name: 'João',
-        email: 'joaovictorca2004@gmail.com',
-        urls: {
-            type: 'whatsapp',
-            url: 'https://wa.me/+5548999227431'
-        }        
-    })
-})
-
 router.get('/', function(req,res){
     res.render('home');
 });
 
 router.get('/Projetos', function(req,res){
-    res.render('projetos');
+    res.render('project');
 });
 
 app.use('/',router);
 
-app.use(function (req, res, next) {
+app.use(function (req, res) {
     res.status(404).render("404")
 })
 
 app.listen(PORT, () => {
-    console.log(`Server do bolado lendário João rodando na porta: ${PORT}`);
+    console.log(`server running, ${PORT}`);
 });
